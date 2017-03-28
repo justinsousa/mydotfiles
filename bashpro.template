@@ -1,0 +1,23 @@
+alias lf='ls -F'
+alias ll='ls -al'
+alias la='ls -a'
+alias grep='grep --colour'
+
+alias ea='subl ~/.bash_profile'
+alias sa='source ~/.bash_profile'
+
+alias rm='rm -i'
+
+#git stuff
+alias log-graph='git log --pretty=format:"%h %s // %cn" --graph'
+
+HISTFILESIZE=2500
+
+[[ ! -d ${HOME}/bin ]] && mkdir -p ${HOME}/bin
+export PATH=$PATH:${HOME}/bin
+
+source ~/.profile
+
+if [ -f ~/.bashrc ]; then
+  source ~/.bashrc
+fi
